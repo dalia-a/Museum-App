@@ -1,0 +1,5 @@
+Will not apply HSTS. The HSTS database must be a regular and non-world-writable file.
+ERROR: could not open HSTS store at '/home/dalia/.wget-hsts'. HSTS will be disabled.
+--2019-12-16 09:27:21--  https://update.code.visualstudio.com/commit:9579eda04fdb3a9bba2750f15193e5fafe16b959/server-linux-x64/stable
+Resolving update.code.visualstudio.com (update.code.visualstudio.com)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘update.code.visualstudio.com’

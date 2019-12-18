@@ -1,0 +1,13 @@
+.entro-container{
+    /* // color:white;
+    // background-image: url('entro.png');
+    // background-repeat: no-repeat, repeat;
+    // background-size: cover;
+    // height: 1000px;
+    // background: transparent url('./img/entro.png') no-repeat center center fixed; */
+    background-color: #C0EFBA;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

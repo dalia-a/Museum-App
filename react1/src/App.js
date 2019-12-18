@@ -14,7 +14,9 @@ import MuseumUpdate from './auth/components/MuseumUpdate'
 import MuseumCreate from './auth/components/MuseumCreate'
 import MuseumShow from './auth/components/MuseumShow'
 import Booking from './auth/components/Booking'
-import Contact from './Contact'
+import Contact from './auth/components/about/Contact'
+import Footer from "./footer/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import Entro from './entro'
 
 class App extends Component {
@@ -66,45 +68,47 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword alert={this.alert} user={user} />
           )} />
-        </main>
+         
         {/* <Route exact path='/' render={() => (
-            <Entro/>
-          )}/> */}
+          <Entro/>
+        )}/> */}
         {/* <Route exact path='/' render={() => (
-            <MuseumList  museumList={this.state.museumList} 
-            setMuseumList={this.setMuseumList} />
-          )} /> */}
+          <MuseumList  museumList={this.state.museumList} 
+          setMuseumList={this.setMuseumList} />
+        )} /> */}
 
           <Route  path='/museumUpdate/:id' render={() => (
             <MuseumUpdate user={user}  museumUpdate={this.state.museumUpdate} 
             setMuseumUpdate={this.setMuseumUpdate} />
-          )} />
+            )} />
 
           <Route  path='/museumShow/:id' render={() => (
             <MuseumShow user={user}  museumList={this.state.museumList}  />
-          )} />
+            )} />
 
           <Route exact path='/museumCreate' render={() => (
             <MuseumCreate user={user} museumCreate={this.state.museumCreate} 
             setMuseumCreate={this.setMuseumCreate} />
-          )} />
+            )} />
 
           <Route  path='/booking/:id' render={(...props) => (
             <Booking user={user} {...props}   museum={this.state.museum}  />
-          )} />
+            )} />
 
           <Route  path='/contact' render={() => (
             <Contact/>
-          )} />
+            )} />
 
  {/* <Route  path='/entro' render={() => (
-             <Entro/>
-           )} /> */}
+   <Entro/>
+  )} /> */}
 
           <Route  path='/museumList' render={() => (
             <MuseumList  museumList={this.state.museumList} 
             setMuseumList={this.setMuseumList} />
-          )} />
+            )} />
+            </main>
+          <Footer  />
                   </React.Fragment>
     );
   }

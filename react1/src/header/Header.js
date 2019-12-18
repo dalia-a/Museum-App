@@ -28,6 +28,7 @@ const alwaysOptions = (
     <Link to="/entro">Home</Link>
     <Link to="/museumList">Explor</Link>
     <Link to="/contact">About Us</Link>
+    <Link to="/MyBooking">My Booking</Link>
     </div>
   </React.Fragment>
 )
